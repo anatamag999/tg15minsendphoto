@@ -2,7 +2,7 @@ name: Send Photo to Telegram
 
 on:
   schedule:
-    - cron: '*/15 23-12 * * *'  # Every 15 mins from 7am–8pm Malaysia time (UTC+8)
+    - cron: '*/15 23-12 * * *'  # Every 15 mins from 7am–8pm (UTC+8)
   workflow_dispatch:
 
 jobs:
