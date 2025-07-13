@@ -10,11 +10,11 @@ now = datetime.datetime.utcnow()
 minute = now.minute
 
 # Round down to nearest target minute (15, 30, 45)
-if 15 <= minute < 30:
+if 15 <= minute < 20:
     target = 15
-elif 30 <= minute < 45:
+elif 30 <= minute < 40:
     target = 30
-elif 45 <= minute < 60:
+elif 45 <= minute < 50:
     target = 45
 else:
     target = None  # 00–14: no photo
@@ -34,4 +34,4 @@ if PHOTO_URL:
     r = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto", data=data)
     print(f"Sent photo for minute {target}: {r.status_code}")
 else:
-    print("No photo scheduled at this time.")
+    print("No photo scheduled at this time / Github huge delay")
