@@ -1,8 +1,6 @@
 name: Send Photo to Telegram
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
