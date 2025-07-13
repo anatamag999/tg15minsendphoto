@@ -10,11 +10,11 @@ now = datetime.datetime.utcnow()
 minute = now.minute
 
 # Round down to nearest target minute (15, 30, 45)
-if 15 <= minute < 25:
+if 15 <= minute < 30:
     target = 15
-elif 30 <= minute < 40:
+elif 30 <= minute < 45:
     target = 30
-elif 45 <= minute < 50:
+elif 45 <= minute < 60:
     target = 45
 else:
     target = None  # 00–14: no photo
